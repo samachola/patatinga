@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: .2em;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Abel', sans-serif;
+    background: #fdfdfd;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+* html .clearfix {
+    zoom: 1;
+}
+
+
+/* IE6 */
+
+*:first-child+html .clearfix {
+    zoom: 1;
+}
+
+#root {
+    width: 100%;
+}
+
+
+/* IE7 */
+
+.jd-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.jd-header {
+    width: 100%;
+    margin: 0 auto;
+    background: #fdde33;
+}
+
+.jd-header .jd-nav {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 2em 0;
+}
+
+.jd-header .jd-nav .jd-title {
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+}
+
+.jd-header .jd-nav .jd-menu {
+    justify-self: end;
+}
+
+.jd-header .jd-nav .jd-menu a {
+    color: #333;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    font-size: .8em;
+    padding: 0 .8em;
+}
+
+.jd-header .jd-nav .jd-menu a:first-child {
+    border-right: 1px solid #333;
+}
+
+.jd-dash {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 15% 80%;
+    grid-gap: 2em
+}
+
+.jd-dash .jd-aside {
+    background: #fdde33;
+    height: 100vh;
+    margin-top: -2em;
+}
+
+.jd-dash .jd-aside .jd-menu {
+    padding: 7em 0;
+}
+
+.jd-dash .jd-aside .jd-menu ul li {
+    list-style: none;
+    padding: 1em 0;
+}
+
+.jd-dash .jd-aside .jd-menu ul li a {
+    color: #333;
+    transition: all .5s;
+}
+
+.jd-dash .jd-aside .jd-menu ul li a:hover {
+    font-size: 1.2em;
+    color: #000;
+}
+
+.jd-dash .jd-main .jd {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.jd-dash .jd-main .jd-main-container {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 60% 35%;
+    grid-gap: 4em;
+}
+
+.jd-dash .jd-main .jd-main-container .jd-statements {
+    padding: 2em 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.jd-dash .jd-main .jd-main-container .jd-statements h2 {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.jd-dash .jd-main .jd-main-container .jd-statements h2::after {
+    content: "";
+    width: 60px;
+    height: .5em;
+    display: block;
+    background: linear-gradient(to right, #fdde33, #7bc556);
+    border-radius: 2em;
+    margin-top: .7em;
+}
+
+.jd-dash .jd-main .jd-main-container .jd-statements .jd-statements-header {
+    width: 100%;
+    margin: 2em auto;
+    display: grid;
+    grid-template-columns: 5% 30% 20% 20% 20%;
+    grid-gap: 1em;
+    border-bottom: .5px solid #ccc;
+    padding-bottom: 1em;
+}
+
+.jd-dash .jd-main .jd-main-container .jd-statements .jd-statements-body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.jd-dash .jd-main .jd-main-container .jd-statements .jd-statements-body .jd-statement {
+    width: 100%;
+    margin: .5em auto;
+    display: grid;
+    grid-template-columns: 5% 30% 20% 20% 20%;
+    grid-gap: 1em;
+    padding: .5em .4em;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+    transition: all .5s;
+}
+
+.jd-dash .jd-main .jd-main-container .jd-statements .jd-statements-body .jd-statement:nth-child(2n) {
+    background: #efefef;
+}
+
+.jd-dash .jd-main .jd-main-container .jd-statements .jd-statements-body .jd-statement:hover {
+    transform: scale(1.07);
+}
+
+.jd-main-container .jd-members .jd-add-member {
+    display: grid;
+    margin: 2em 0;
+}
+
+.jd-main-container .jd-members .jd-add-member button {
+    width: 200px;
+    text-align: center;
+    float: left;
+    justify-self: end;
+    background: linear-gradient(to right, #fdde33, #7bc556);
+    border-radius: 2em;
+    color: #FFF;
+    padding: .5em 1em;
+    font-weight: bold;
+    letter-spacing: .2em;
+    border: none;
+}
+
+.jd-main-container .jd-members .jd-members-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.jd-main-container .jd-members .jd-members-container .jd-member {
+    width: 90%;
+    margin: 0em auto 1em auto;
+    display: grid;
+    grid-template-columns: 30% 65%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    padding: .5em;
+    transition: all .5s;
+}
+
+.jd-main-container .jd-members .jd-members-container .jd-member:hover {
+    transform: scale(1.05);
+}
+
+.jd-main-container .jd-members .jd-members-container .jd-member .jd-member-avatar {
+    width: 60px;
+    display: grid;
+    justify-self: center;
+}
+
+.jd-main-container .jd-members .jd-members-container .jd-member .jd-member-avatar img {
+    width: 100%;
+}
+
+.jd-main-container .jd-members .jd-members-container .jd-member .jd-member-details h3 {
+    font-size: 1em;
+    color: #333;
+    line-height: 0;
+}
