@@ -1,0 +1,32 @@
+.header-menu {
+    height: 5rem;
+    background-color: white;
+    display: flex;
+    color: #fdde33;
+    font-size: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    align-items: center;
+}
+
+.header-menu a {
+    color: #fdde33;
+}
+
+.header-menu h2 {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.header-menu .header-menu-home {
+    display: flex;
+    margin-right: 61rem;
+    margin-left: 2rem;
+}
+
+.header-menu .header-menu-signin h2 {
+    border-right: 2px solid #fdde33;
+    padding-right: 1rem;
+}
